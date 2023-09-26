@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auto contrast</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <!-- install brain.js library -->
+    <script src="//unpkg.com/brain.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body
+    class="flex flex-col items-center justify-center gap-2 bg-slate-200 h-screen pt-24"
+  >
+    <h1 class="text-slate-800 text-4xl font-bold uppercase">Train my AI</h1>
+    <h2 class=" text-slate-500 max-w-[600px] text-left py-12">
+      How this works: <br/>
+      1. Select which text color better works for each background <br />
+      2. Print data to generate new training data - check console <br />
+      3. Generate a report to see AI's percentage of correct guess
+    </h2>
+    <div
+      id="color"
+      class="border-slate-500 h-[500px] w-[500px] flex flex-col items-center justify-center shadow-xl rounded-lg"
+    >
+      <div class="text-white font-semibold text-2xl pb-8">
+        Sample of white text
+      </div>
+      <div class="font-semibold text-2xl pb-8">Sample of black text</div>
+      <div
+        class="borber px-4 py-1 text-center font-semibold text-2xl"
+        id="guess"
+      >
+        AI Guess
+      </div>
+    </div>
+
+    <div class="flex flex-row items-center justify-center gap-4 pt-6">
+      <button
+        onclick="userGuess('white')"
+        class="px-4 py-2 border border-slate-300 rounded-sm shadow-lg"
+        id="white-button"
+      >
+        White
+      </button>
+      <button
+        onclick="userGuess('black')"
+        class="px-4 py-2 border border-slate-300 bg-black/70 text-white rounded-sm shadow-lg"
+        id="black-button"
+      >
+        Black
+      </button>
+      <button
+        class="px-4 py-2 border border-slate-300 rounded-sm shadow-lg"
+        id="print-button"
+      >
+        Print data to console
+      </button>
+      <button
+        onclick="generateReport()"
+        class="px-4 py-2 border border-slate-300 rounded-sm shadow-lg"
+        id="report-button"
+      >
+        Generate report
+      </button>
+    </div>
+    <div id="report" class="border p-4 text-lg font-semibold text-center"></div>
+  </body>
+</html>

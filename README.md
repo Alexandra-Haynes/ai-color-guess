@@ -1,4 +1,5 @@
 # AI Color Guessing Project
+![ai color guess](https://github.com/Alexandra-Haynes/ai-color-guess/assets/113944962/07211e0e-1c5f-4729-a51b-1aa73f633c2c)
 
 ## Overview
 

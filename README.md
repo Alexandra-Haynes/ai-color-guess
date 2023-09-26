@@ -11,7 +11,6 @@ The neural network is trained with initial data and then further trained with us
 
 ## Setup and Installation
 
-Provide step-by-step instructions on how to set up and install your project locally. Mention any software dependencies that are needed.
 
 ```bash
 # Clone the repository
@@ -25,7 +24,6 @@ npm install
 ```
 
 ## Usage
-
 
 
 1. **Open the Application:**

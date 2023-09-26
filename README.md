@@ -26,7 +26,7 @@ npm install
 
 ## Usage
 
-Explain how to use your project after it's installed. Include screenshots or code examples.
+
 
 1. **Open the Application:**
    - A random color will be displayed along with the AI's guess.
